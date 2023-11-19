@@ -2,15 +2,12 @@
 *:before,
 *:after {
   box-sizing: border-box;
-  /* margin: 0; */
 }
 
 #root {
   box-sizing: border-box;
   width: 100%;
   margin: 0;
-  /* padding: 2rem; */
-  /* text-align: center; */
 }
 
 :root {
@@ -22,6 +19,20 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --questions-color: #fab214;
+  --secondary-color: #535bf2;
+  --background-grey-color: #f8f9fa;
+  --background-borderbottom-color: #e3e6f0;
+  --text-color: #ffffff;
+  --link-color: #646cff;
+  --link-hover-color: #747bff;
+  --button-background-color: #1a1a1a;
+  --button-border-color: transparent;
+  --button-text-color: #ffffff;
+  --button-hover-border-color: #646cff;
+
+  /* Rest of your CSS code goes here */
 }
 
 a {

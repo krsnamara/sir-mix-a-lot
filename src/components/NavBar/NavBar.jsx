@@ -1,8 +1,11 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { IoSearch, IoBagOutline } from 'react-icons/io5';
+import { MdOutlineAccountCircle } from 'react-icons/md';
+
 import './NavBar.css';
 
-function NavBar({ count }) {
+function NavBar() {
   return (
     <header className="nav-header">
       <div>
@@ -48,7 +51,17 @@ function NavBar({ count }) {
           </li>
         </ul>
       </nav>
-      <div>Count {count}</div>
+      <div>
+        <button className="nav-search-button">
+          <IoSearch />
+        </button>
+        <button className="nav-bag-button">
+          <IoBagOutline />
+        </button>
+        <button className="nav-account-button">
+          <MdOutlineAccountCircle />
+        </button>
+      </div>
     </header>
   );
 }

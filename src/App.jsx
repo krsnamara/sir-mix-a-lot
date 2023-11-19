@@ -1,8 +1,17 @@
 import { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import NavBar from './components/NavBar/NavBar';
-import Questions from './components/Questions/Questions';
-import { Contact, Dealers, Home, Shop, Specs, Support, Videos } from './pages';
+import {
+  Contact,
+  Dealers,
+  Home,
+  Shop,
+  Specs,
+  Support,
+  Videos,
+  Cart,
+  Login,
+} from './pages';
+import { Footer, NavBar, Questions } from './components';
 import './App.css';
 
 function App() {
@@ -20,6 +29,8 @@ function App() {
         <Route path="/specs" element={<Specs />} />
         <Route path="/support" element={<Support />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/contact" element={<Cart />} />
+        <Route path="/contact" element={<Login />} />
       </Routes>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
@@ -29,6 +40,7 @@ function App() {
           decrease the count {count}
         </button>
       </div>
+      <Footer count={count} />
     </>
   );
 }

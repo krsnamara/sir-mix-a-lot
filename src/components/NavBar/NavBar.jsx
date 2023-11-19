@@ -9,13 +9,13 @@ function NavBar() {
   return (
     <header className="nav-header">
       <div>
-        <h1>
+        <NavLink to="/home">
           <img
             className="nav-logo"
             src="src/assets/images/sirmix_logo1.svg"
             alt="logo"
           />
-        </h1>
+        </NavLink>
       </div>
       <nav>
         <ul className="nav-ul">

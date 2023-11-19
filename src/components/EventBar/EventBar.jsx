@@ -18,7 +18,7 @@ function EventBar() {
   };
 
   return (
-    <div>
+    <div className="eventBar-main-container">
       <h2>Number of items in cart: {cartCount}</h2>
       <h2>User is: {loggedIn ? 'Logged In' : 'Logged Out'}</h2>
       <button onClick={handleLogin}>Login</button>

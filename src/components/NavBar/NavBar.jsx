@@ -52,15 +52,23 @@ function NavBar() {
         </ul>
       </nav>
       <div>
-        <button className="nav-search-button">
-          <IoSearch />
-        </button>
-        <button className="nav-bag-button">
-          <IoBagOutline />
-        </button>
-        <button className="nav-account-button">
-          <MdOutlineAccountCircle />
-        </button>
+        <ul className="nav-ul">
+          <li>
+            <button className="nav-search-button">
+              <IoSearch />
+            </button>
+          </li>
+          <li>
+            <NavLink to="/cart" className="nav-bag-button">
+              <IoBagOutline />
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/login" className="nav-account-button">
+              <MdOutlineAccountCircle />
+            </NavLink>
+          </li>
+        </ul>
       </div>
     </header>
   );

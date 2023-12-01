@@ -20,32 +20,44 @@ function NavBar() {
       <nav>
         <ul className="nav-ul">
           <li>
-            <NavLink to="/shop" activeClassName="active">
+            <NavLink to="/shop" activeClassName="active" className="nav-link">
               Shop
             </NavLink>
           </li>
           <li>
-            <NavLink to="/dealers" activeClassName="active">
+            <NavLink
+              to="/dealers"
+              activeClassName="active"
+              className="nav-link"
+            >
               Dealers
             </NavLink>
           </li>
           <li>
-            <NavLink to="/videos" activeClassName="active">
+            <NavLink to="/videos" activeClassName="active" className="nav-link">
               Videos
             </NavLink>
           </li>
           <li>
-            <NavLink to="/specs" activeClassName="active">
+            <NavLink to="/specs" activeClassName="active" className="nav-link">
               Specs
             </NavLink>
           </li>
           <li>
-            <NavLink to="/support" activeClassName="active">
+            <NavLink
+              to="/support"
+              activeClassName="active"
+              className="nav-link"
+            >
               Support
             </NavLink>
           </li>
           <li>
-            <NavLink to="/contact" activeClassName="active">
+            <NavLink
+              to="/contact"
+              activeClassName="active"
+              className="nav-link"
+            >
               Contact
             </NavLink>
           </li>

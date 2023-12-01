@@ -32,3 +32,23 @@
 .nav-logo {
   height: 10%;
 }
+
+.nav-link:hover {
+  color: lightgray; /* Set the lighter font color for hover state */
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Add this style for the active link */
+.nav-link.active {
+  text-decoration: underline; /* Set the color for the active link */
+}
+
+/* Add this style for the button hover effect */
+.nav-button:hover {
+  color: lightgray; /* Set the lighter font color for hover state */
+}
+
+/* Add this style for the active button */
+.nav-button.active {
+  text-decoration: underline; /* Set the color for the active button */
+}
